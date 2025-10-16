@@ -50,7 +50,6 @@ main {
 #redes-sociais {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     align-items: end;
     gap: 15px;
     padding: 10px;
@@ -61,11 +60,18 @@ img {
     width: 50px;
     border: 2px solid rgba(255, 255, 255, 0.363);
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.404);
-    transition: transform 0.2s, border 0.2s, box-shadow 0.2s ease-in-out;
+    opacity: 70%;
+    transition: transform 0.1s, border 0.2s, box-shadow 0.2s, opacity 0.2s ease-in-out;
 }
 
 img:hover {
     transform: scale(1.05) translateY(-5px);
     border: 2px solid white;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.644);
+    opacity: 100%;
+}
+
+img:active {
+    transform: scale(1) translateY(1px);
+    
 }
